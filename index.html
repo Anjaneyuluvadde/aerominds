@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="icon" type="image/png" href="assets/images/logo_header_transparent.png">
+  <title>Aerominds | Drone Services & Training</title>
+  <link rel="stylesheet" href="css/global.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/pages.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <!-- Global Background -->
+  <img src="assets/images/drone_field_bg.jpg" alt="Farmland Landscape" class="global-bg">
+  <div class="global-overlay home-overlay"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <a href="index.html" class="brand">
+      <img src="assets/images/logo_header_transparent.png" alt="Aerominds Logo">
+    </a>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <div class="dropdown">
+        <a href="services.html">Services ▾</a>
+        <div class="dropdown-menu">
+          <a href="training.html">Drone Training & Certification</a>
+          <a href="spraying.html">Precision Drone Spraying</a>
+          <a href="repair.html">Drone Repair & AMC</a>
+          <hr style="border: 0; border-top: 1px solid var(--border-grey); margin: 0.5rem 0;">
+          <a href="mapping.html">Survey & Mapping</a>
+          <a href="sales.html">Sales & Consultation</a>
+          <a href="cable.html">Cable Deployment</a>
+        </div>
+      </div>
+      <a href="legal.html">AeroDroneMitra</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="nav-actions">
+      <button class="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <a href="contact.html" class="btn btn-primary" style="display:none;" id="mobile-hide-btn">Get Started</a>
+      <a href="contact.html" class="btn btn-primary hidden-mobile-btn">Get Started</a>
+      <style>
+        .hidden-mobile-btn {
+          display: inline-block;
+        }
+
+        @media(max-width: 992px) {
+          .hidden-mobile-btn {
+            display: none;
+          }
+        }
+      </style>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero page-wrapper">
+    <!-- Parallax Cinematic Background Scenes -->
+    <div class="hero-slider" id="hero-slider-bgs">
+
+      <!-- Scene 1: Training -->
+      <div class="slide scene-container active-slide">
+        <div class="scene-bg" style="background-image: url('assets/images/hero_training_base.jpg');"></div>
+        <div class="scene-fx grass-sway"></div>
+      </div>
+
+      <!-- Scene 2: Spraying -->
+      <div class="slide scene-container">
+        <div class="scene-bg" style="background-image: url('assets/images/hero_spraying_base.jpg');"></div>
+        <div class="scene-fx mist-fall"></div>
+        <div class="scene-fx cloud-drift"></div>
+      </div>
+
+      <!-- Scene 3: Repair -->
+      <div class="slide scene-container">
+        <div class="scene-bg" style="background-image: url('assets/images/hero_repair_base.jpg');"></div>
+        <div class="scene-fx workshop-sparks"></div>
+        <div class="scene-fx diag-monitor-glow"></div>
+      </div>
+
+      <!-- Scene 4: Mapping -->
+      <div class="slide scene-container">
+        <div class="scene-bg" style="background-image: url('assets/images/mapping_survey_hero.png');"></div>
+        <div class="scene-fx cloud-drift"></div>
+      </div>
+
+      <!-- Scene 5: Sales -->
+      <div class="slide scene-container">
+        <div class="scene-bg" style="background-image: url('assets/images/sales_hero.png');"></div>
+        <div class="scene-fx diag-monitor-glow"></div>
+      </div>
+
+      <!-- Scene 6: Cable -->
+      <div class="slide scene-container">
+        <div class="scene-bg" style="background-image: url('assets/images/cable_hero.png');"></div>
+        <div class="scene-fx mist-fall"></div>
+      </div>
+
+    </div>
+    <div class="hero-slider-overlay"></div>
+
+    <!-- Slider Navigation Dots -->
+    <div class="slider-nav" id="hero-slider-nav">
+      <div class="slider-dot active" data-index="0"></div>
+      <div class="slider-dot" data-index="1"></div>
+      <div class="slider-dot" data-index="2"></div>
+      <div class="slider-dot" data-index="3"></div>
+      <div class="slider-dot" data-index="4"></div>
+      <div class="slider-dot" data-index="5"></div>
+    </div>
+
+    <div class="container hero-content">
+      <div class="hero-glass-panel fade-in" id="hero-text-container">
+        <h1 id="hero-title">Remote Pilot Training (RPTO)</h1>
+        <p id="hero-subtext">DGCA-approved drone pilot training programs with certification in collaboration with SynchroServe RPTO</p>
+
+        <div class="hero-buttons">
+          <a href="#" class="btn" id="hero-btn-primary">Get Started</a>
+          <a href="#" class="btn-outline" id="hero-btn-secondary">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Home Services Teaser -->
+  <section class="section-padding container">
+    <div class="text-center mb-4 fade-in">
+      <h2 class="text-gradient" style="font-size: 2.5rem;">Our Core Expertise</h2>
+      <p>Delivering high-performance drone solutions across industries.</p>
+    </div>
+    <div class="service-cards-grid scale-in" style="grid-template-columns: repeat(2, 1fr); gap: 2rem;">
+      <div class="glass-card home-service-card fade-in">
+        <div class="icon-box">
+          <img src="assets/images/training_4k.png" alt="Training" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+        <div>
+          <h3 class="mb-1" style="color: var(--blue-accent);">Training & Certification</h3>
+          <p>DGCA-certified drone pilot and technician training programs designed for a dynamic future.</p>
+          <a href="training.html" style="color: var(--green-accent); font-weight: 600;">Learn More →</a>
+        </div>
+      </div>
+      <div class="glass-card home-service-card fade-in">
+        <div class="icon-box">
+          <img src="assets/images/drone_spray_4k.png" alt="Spraying" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+        <div>
+          <h3 class="mb-1" style="color: var(--blue-accent);">Precision Spraying</h3>
+          <p>Boost your agricultural crop yields with high-tech accurate drone spraying solutions.</p>
+          <a href="spraying.html" style="color: var(--green-accent); font-weight: 600;">Learn More →</a>
+        </div>
+      </div>
+      <div class="glass-card home-service-card fade-in">
+        <div class="icon-box">
+          <img src="assets/images/repair_drone.png" alt="Repair" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+        <div>
+          <h3 class="mb-1" style="color: var(--blue-accent);">Maintenance & Repair</h3>
+          <p>Comprehensive repair services and AMC contracts to keep your fleet in the sky safely.</p>
+          <a href="repair.html" style="color: var(--green-accent); font-weight: 600;">Learn More →</a>
+        </div>
+      </div>
+      <div class="glass-card home-service-card fade-in">
+        <div class="icon-box">
+          <img src="assets/images/business_training.png" alt="Support" loading="lazy" decoding="async" style="width: 100%; height: 100%; object-fit: cover; border-radius: 15px;">
+        </div>
+        <div>
+          <h3 class="mb-1" style="color: var(--blue-accent);">Entrepreneur Support</h3>
+          <p>Start and grow your drone business with our guidance on setup, field access, and support.</p>
+          <a href="about.html" style="color: var(--green-accent); font-weight: 600;">Explore Opportunities →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Collaborations Section -->
+  <section class="section-padding container">
+    <div class="text-center mb-4 fade-in">
+      <h2 class="text-gradient" style="font-size: 2.5rem;">Trusted Collaborations</h2>
+      <p>We work in collaboration with leading organizations to deliver reliable drone solutions and training support.
+      </p>
+    </div>
+    <div class="glass-card fade-in" style="padding: 3rem;">
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 3rem;">
+        <div style="border-left: 4px solid var(--green-accent); padding-left: 2rem;">
+          <h3 style="color: var(--blue-accent); margin-bottom: 0.7rem; font-size: 1.4rem;">Agriculture Operations</h3>
+          <p style="margin-bottom: 0; font-size: 1.1rem;">Executing large-scale spraying operations in association with
+            <strong>Coromandel International (Gromor)</strong>.</p>
+        </div>
+        <div style="border-left: 4px solid var(--blue-accent); padding-left: 2rem;">
+          <h3 style="color: var(--green-accent); margin-bottom: 0.7rem; font-size: 1.4rem;">Pilot Training</h3>
+          <p style="margin-bottom: 0; font-size: 1.1rem;">DGCA-certified pilot training programs facilitated through
+            <strong>SynchroServe RPTO</strong>.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Statistics Section -->
+  <section class="section-padding container">
+    <div class="glass-card fade-in">
+      <div class="stats-grid" style="grid-template-columns: repeat(3, 1fr);">
+        <div class="stat-item">
+          <h2>500+</h2>
+          <p>Pilots Certified</p>
+        </div>
+        <div class="stat-item">
+          <h2>10k+</h2>
+          <p>Acres Sprayed</p>
+        </div>
+        <div class="stat-item">
+          <h2>99%</h2>
+          <p>Safety Record</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Final CTA Section -->
+  <section class="section-padding container">
+    <div class="glass-card text-center fade-in"
+      style="background: linear-gradient(135deg, rgba(255,255,255,0.9), rgba(123, 179, 66, 0.1)); border: 1px solid var(--green-accent);">
+      <h2 class="text-gradient mb-2" style="font-size: 2.2rem;">Ready to Take Flight?</h2>
+      <p style="font-size: 1.2rem; max-width: 700px; margin: 0 auto 2rem;">Looking for drone services or planning to
+        start your drone business? Contact us today for professional solutions.</p>
+      <a href="contact.html" class="btn btn-primary" style="padding: 1rem 3rem; font-size: 1.1rem;">Contact Us Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <img src="assets/images/logo_header_transparent.png" alt="Aerominds Logo" style="max-width: 180px; margin-bottom: 1rem;">
+          <p>Pioneering the future of agricultural and industrial drone solutions with world-class training, spraying,
+            and repair services.</p>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="about.html">About Us</a>
+          <a href="services.html">All Services</a>
+          <a href="contact.html">Contact Support</a>
+          <a href="legal.html">AeroDroneMitra</a>
+        </div>
+        <div class="footer-col">
+          <h4>Services</h4>
+          <a href="training.html">Drone Training</a>
+          <a href="spraying.html">Agri Spraying</a>
+          <a href="repair.html">Repairs & AMC</a>
+          <a href="mapping.html">Survey & Mapping</a>
+          <a href="sales.html">Sales & Consultation</a>
+          <a href="cable.html">Cable Deployment</a>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>📧 info@aerominds.com</p>
+          <p>📞 +91 70757 05139</p>
+          <p>📍 Flat No.: 32-10-1, Ground Floor, Gummadi Vari Street, Mogal Raj Puram, Vijayawada, NTR District, Andhra Pradesh - 520010, India</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Aerominds. All Rights Reserved.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+
+</html>
