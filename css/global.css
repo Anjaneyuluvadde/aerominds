@@ -44,7 +44,7 @@ h6 {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 2px rgba(255, 255, 255, 1));
 }
 
 p {
@@ -55,7 +55,7 @@ p {
 .subtitle,
 .page-header p,
 .hero-content p,
-.section-padding > div > p:first-of-type {
+.section-padding>div>p:first-of-type {
   color: rgba(255, 255, 255, 0.95);
   font-size: 1.25rem;
   line-height: 1.6;
@@ -164,7 +164,7 @@ ul {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
-  filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.8)) drop-shadow(0 0 2px rgba(255, 255, 255, 1));
 }
 
 .text-white {
