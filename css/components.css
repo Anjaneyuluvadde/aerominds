@@ -301,6 +301,13 @@ footer {
   color: var(--blue-accent);
 }
 
+.footer-logo {
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
 .footer-col a {
   display: block;
   margin-bottom: 0.8rem;

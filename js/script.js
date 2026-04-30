@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // This ensures the logo is consistent across all pages and can be easily updated in one place.
   const LOGO_CONFIG = {
     header: 'assets/images/Logo_1.png',
-    footer: 'assets/images/logo_header_transparent.png',
+    footer: 'assets/images/Logo_1.png',
     favicon: 'assets/images/logo_header_transparent.png'
   };
 
