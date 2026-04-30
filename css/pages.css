@@ -485,7 +485,6 @@
 
 .stat-item h2 {
   font-size: 3rem;
-  color: var(--green-accent);
   margin-bottom: 0.5rem;
 }
 
@@ -597,13 +596,9 @@
 
 .page-header h1 {
   font-size: 3.5rem;
-  color: var(--blue-accent);
 }
 
-.page-header p {
-  font-size: 1.2rem;
-  color: var(--text-dark);
-}
+
 
 /* Mobile Adjustments */
 @media (max-width: 992px) {
@@ -705,7 +700,6 @@
 .service-hub-card h3 {
   font-size: 1.4rem;
   margin-bottom: 0.8rem;
-  color: var(--blue-accent);
   min-height: 3.5rem;
   /* Ensure title height consistency */
   display: flex;

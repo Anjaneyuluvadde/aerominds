@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+  // --- Global Logo Logic ---
+  // This ensures the logo is consistent across all pages and can be easily updated in one place.
+  const LOGO_CONFIG = {
+    header: 'assets/images/Logo_1.png',
+    footer: 'assets/images/logo_header_transparent.png',
+    favicon: 'assets/images/logo_header_transparent.png'
+  };
+
+  const headerLogoImg = document.querySelector('.navbar .brand img');
+  if (headerLogoImg) headerLogoImg.src = LOGO_CONFIG.header;
+
+  const footerLogoImg = document.querySelector('footer .footer-col img');
+  if (footerLogoImg) footerLogoImg.src = LOGO_CONFIG.footer;
+
   // Mobile Nav Toggle
   const menuBtn = document.querySelector('.menu-toggle');
   const navLinks = document.querySelector('.nav-links');
