@@ -20,6 +20,27 @@
   transition: all 0.3s ease;
 }
 
+.card-branding {
+  position: absolute;
+  top: 1.2rem;
+  right: 1.2rem;
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  padding: 0.3rem 0.8rem;
+  border-radius: 30px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 900;
+  letter-spacing: 3px;
+  z-index: 10;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-transform: uppercase;
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+  pointer-events: none;
+  mix-blend-mode: soft-light;
+}
+
 .navbar.scrolled {
   top: 0;
   width: 100%;
