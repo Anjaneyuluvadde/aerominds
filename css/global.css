@@ -36,7 +36,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
+  font-family: var(--font-heading);
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 1rem;
@@ -45,31 +45,6 @@ h6 {
   -webkit-text-fill-color: transparent;
   display: inline-block;
   filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
-  letter-spacing: 1px;
-  paint-order: stroke fill;
-}
-
-h1 {
-  text-shadow: 
-    -4px -4px 0 #fff,  4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff,
-     0px -4px 0 #fff,  0px 4px 0 #fff, -4px 0px 0 #fff, 4px 0px 0 #fff,
-     0px 4px 15px rgba(0, 0, 0, 0.3);
-  -webkit-text-stroke: 1px white;
-}
-
-h2 {
-  text-shadow: 
-    -3px -3px 0 #fff,  3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff,
-     0px -3px 0 #fff,  0px 3px 0 #fff, -3px 0px 0 #fff, 3px 0px 0 #fff,
-     0px 4px 15px rgba(0, 0, 0, 0.3);
-  -webkit-text-stroke: 0.5px white;
-}
-
-h3 {
-  text-shadow: 
-    -2px -2px 0 #fff,  2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff,
-     0px -2px 0 #fff,  0px 2px 0 #fff, -2px 0px 0 #fff, 2px 0px 0 #fff,
-     0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 p {
@@ -310,4 +285,14 @@ ul {
       rgba(255, 255, 255, 0) 100%);
   background-size: 200% 100%;
   animation: shimmer 1.5s infinite;
+}
+
+bottom: 0;
+left: 0;
+background: linear-gradient(90deg,
+  rgba(255, 255, 255, 0) 0%,
+  rgba(255, 255, 255, 0.4) 50%,
+  rgba(255, 255, 255, 0) 100%);
+background-size: 200% 100%;
+animation: shimmer 1.5s infinite;
 }
