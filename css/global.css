@@ -36,15 +36,40 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: var(--font-heading);
+  font-family: "Arial Rounded MT Bold", Arial, sans-serif;
   font-weight: 900;
   line-height: 1.2;
   margin-bottom: 1rem;
-  background: linear-gradient(to right, var(--blue-accent) 0%, var(--blue-accent) 80%, var(--green-accent) 100%);
+  background: linear-gradient(to right, #1A72D9, #22C97A);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline-block;
   filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
+  letter-spacing: 1px;
+  paint-order: stroke fill;
+}
+
+h1 {
+  text-shadow: 
+    -4px -4px 0 #fff,  4px -4px 0 #fff, -4px 4px 0 #fff, 4px 4px 0 #fff,
+     0px -4px 0 #fff,  0px 4px 0 #fff, -4px 0px 0 #fff, 4px 0px 0 #fff,
+     0px 4px 15px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 1px white;
+}
+
+h2 {
+  text-shadow: 
+    -3px -3px 0 #fff,  3px -3px 0 #fff, -3px 3px 0 #fff, 3px 3px 0 #fff,
+     0px -3px 0 #fff,  0px 3px 0 #fff, -3px 0px 0 #fff, 3px 0px 0 #fff,
+     0px 4px 15px rgba(0, 0, 0, 0.3);
+  -webkit-text-stroke: 0.5px white;
+}
+
+h3 {
+  text-shadow: 
+    -2px -2px 0 #fff,  2px -2px 0 #fff, -2px 2px 0 #fff, 2px 2px 0 #fff,
+     0px -2px 0 #fff,  0px 2px 0 #fff, -2px 0px 0 #fff, 2px 0px 0 #fff,
+     0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 p {

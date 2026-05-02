@@ -64,6 +64,14 @@
   transition: none !important;
 }
 
+.hero-glass-panel h1 {
+  -webkit-text-stroke: 0 !important;
+  paint-order: normal;
+  background: linear-gradient(to right, var(--blue-accent) 0%, var(--blue-accent) 80%, var(--green-accent) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 /* Final Polish: We removed the drone overlays to focus on the cinematic background scenes! */
 
 /* Front Level Special Effects (Mist, Clouds, UI Glows) */
@@ -318,6 +326,8 @@
   /* Stronger shadow for better legibility on bright spots */
   filter: drop-shadow(0 4px 15px rgba(0, 0, 0, 0.3));
   transition: all 0.4s ease;
+  -webkit-text-stroke: 0 !important;
+  paint-order: normal;
 }
 
 .hero-glass-panel p {
@@ -718,4 +728,10 @@
   align-self: flex-start;
   width: 100%;
   text-align: center;
+}
+
+margin-top: auto;
+align-self: flex-start;
+width: 100%;
+text-align: center;
 }
